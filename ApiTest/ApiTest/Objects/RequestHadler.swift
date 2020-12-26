@@ -91,26 +91,26 @@ struct RequestHandler {
 //            let json = JSON(pagedResults)
 //            print(json)
 //        }
-    var pagedResults = [AnyObject]()
-    @discardableResult
-    mutating func responseJSONMy(_ closure: ((JSON) -> Void)?) -> RequestHandler {
-
-        AF.request(completeUrl, method: .get)
-            .responseData { (response) in
-                if let data = response.data {
-                    let json = (try? JSON(data: data)) ?? JSON()
-                    var currentPage = 1
-                    let nextPage = json["next"]
-                    print(nextPage)
-                    var results = json["results"].arrayObject!
-                    pagedResults.append(results)
-                    closure?(json)
-                } else {
-                    closure?(JSON())
-                }
-            }
-        return self
-    }
+//    var pagedResults = [AnyObject]()
+//    @discardableResult
+//    mutating func responseJSONMy(_ closure: ((JSON) -> Void)?) -> RequestHandler {
+//
+//        AF.request(completeUrl, method: .get)
+//            .responseData { (response) in
+//                if let data = response.data {
+//                    let json = (try? JSON(data: data)) ?? JSON()
+//                    var currentPage = 1
+//                    let nextPage = json["next"]
+//                    print(nextPage)
+//                    var results = json["results"].arrayObject!
+//                    pagedResults.append(results)
+//                    closure?(json)
+//                } else {
+//                    closure?(JSON())
+//                }
+//            }
+//        return self
+//    }
 
     
 }
