@@ -15,7 +15,7 @@ class CharactersTableViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        fecthCachedData()
+        
         loadData()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CharacterCell")
@@ -29,36 +29,19 @@ class CharactersTableViewController: UITableViewController {
     }
     
     func viewWillAppear() {
-        fecthCachedData()
-        
       loadData()
         self.tableView.reloadData()
     }
     
     private func loadData() {
-        //CharactersManager.shared.fetchCharacter()
+
         CharactersManager.shared.fetchAllCharacters() { (array) in
             print((array ?? []).map { $0.name })
             allCharacters = (array ?? []).map { $0.name }
-            //if let allCharacters.count {
-                for character in allCharacters ?? [] {
-                    let userRealmModel = UserRealmModel()
-                    userRealmModel.idLocal = UUID().uuidString
-                    userRealmModel.name = character ?? ""
-                    DatabaseManager.shared.add(userRealmModel)
-                }
-            //}
             print("All Characters: \(allCharacters?.count)")
             self.tableView.reloadData()
         }
 
-    }
-    
-    private func fecthCachedData() {
-        let realmUsers: [UserRealmModel] = DatabaseManager.shared.fetch()
-        let users: [CharacterResult] = realmUsers.map { CharacterResult(realmModel: $0) }
-        allCharacters = users.map { "\($0.name ?? "")"}
-        
     }
 
     // MARK: - Table view data source

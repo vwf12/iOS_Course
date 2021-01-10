@@ -20,7 +20,6 @@
 		7445442A2597744B000C9047 /* CharactersTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744544282597744B000C9047 /* CharactersTableViewController.xib */; };
 		7445443025977C9D000C9047 /* CharactersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7445442F25977C9D000C9047 /* CharactersManager.swift */; };
 		74BC504B25AA094600A3FFDC /* UserRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC504A25AA094600A3FFDC /* UserRealmModel.swift */; };
-		74BC505425AA0C4E00A3FFDC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC505325AA0C4E00A3FFDC /* DatabaseManager.swift */; };
 		F3AD34C8AA374313A6C710ED /* Pods_ApiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13B52A3E5DC22770FB424D /* Pods_ApiTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +41,6 @@
 		744544282597744B000C9047 /* CharactersTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersTableViewController.xib; sourceTree = "<group>"; };
 		7445442F25977C9D000C9047 /* CharactersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersManager.swift; sourceTree = "<group>"; };
 		74BC504A25AA094600A3FFDC /* UserRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRealmModel.swift; sourceTree = "<group>"; };
-		74BC505325AA0C4E00A3FFDC /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		BC13B52A3E5DC22770FB424D /* Pods_ApiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				7445442F25977C9D000C9047 /* CharactersManager.swift */,
-				74BC505325AA0C4E00A3FFDC /* DatabaseManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -280,7 +277,6 @@
 			files = (
 				744544292597744B000C9047 /* CharactersTableViewController.swift in Sources */,
 				7445440325975CEC000C9047 /* Codable+JSON.swift in Sources */,
-				74BC505425AA0C4E00A3FFDC /* DatabaseManager.swift in Sources */,
 				744543E02597508A000C9047 /* ViewController.swift in Sources */,
 				744543DC2597508A000C9047 /* AppDelegate.swift in Sources */,
 				74BC504B25AA094600A3FFDC /* UserRealmModel.swift in Sources */,

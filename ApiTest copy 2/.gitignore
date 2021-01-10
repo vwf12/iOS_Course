@@ -1,0 +1,15 @@
+*.swp
+*.swo
+*.rbo
+*.gem
+*.a
+.DS_Store
+.rbenv-version
+.rbx/
+xcuserdata
+project.xcworkspace
+DerivedData
+/concatenated.*
+Pods/
+Podfile
+Podfile.lock

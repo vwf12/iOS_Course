@@ -41,10 +41,9 @@ struct RequestHandler {
         AF.request(completeUrl, method: .get)
             .responseData { (response) in
                 if let data = response.data {
-                    DatabaseManager.shared.deleteAll()
                     let json = (try? JSON(data: data)) ?? JSON()
-//                    let nextPage = json["next"]
-//                    print(nextPage)
+                    //let nextPage = json["next"]
+                    //print(nextPage)
                     closure?(json)
                 } else {
                     closure?(JSON())

@@ -31,8 +31,6 @@ class CharactersManager {
     func fetchAllCharacters(closure: (([CharacterResult]?) -> Void)?) {
         
         RequestHandler(path: "users").response(closure)
-        
-        
          
     }
     
@@ -41,10 +39,10 @@ class CharactersManager {
 //        RequestHandler(path: "people/?page=\(i)").response(closure)
 //           
 //        }
-        
-//        Test
-        
-        
-        
+//        
+////        Test
+//        
+//        
+//        
 //    }
 }
